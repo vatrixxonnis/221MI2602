@@ -19,6 +19,10 @@
 	--header-outer-height: 110px;
 	--header-inner-height: 70px;
 	--header-bg: #FFF;
+
+    /* Slide */
+    --slide-height:768px;
+    --slide-width: 1366px;
 }
 
 body {
@@ -150,3 +154,26 @@ a {
 		display: none;
 	}
 }
+
+#slideshow {
+    overflow: hidden;
+    height: var(--slide-height);
+    width: var(--slide-width);
+    margin: 0 auto;
+  }
+ .slide-wrapper {
+    width: calc(var(--slide-width) * 3);
+    animation: slide 15s ease infinite;
+  }
+ .slide {
+    float: left;
+    height: var(--slide-height);
+    width: var(--slide-width);
+  }
+ @keyframes slide {
+    10% {margin-left: 0px;}
+    30% {margin-left: calc(var(--slide-width) * -1);}
+    50% {margin-left: calc(var(--slide-width) * -1);}
+    70% {margin-left: calc(var(--slide-width) * -2);}
+    90% {margin-left: calc(var(--slide-width) * -2);}
+  }
