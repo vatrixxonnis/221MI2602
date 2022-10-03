@@ -1,52 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/home.css">
-  <title>221MI2602</title>
-</head>
-<body>
-  <div class="banner-outer">
-    <div class="banner-inner responsive-wrapper">
-      <p>Save up to 70% on selected merch. <a href="#">Go to sale</a></p>
-    </div>
-  </div>
-  <!-- Sticky header -->
-  <header class="header-outer">
-    <div class="header-inner">
-      <div class="header-logo">
-        <img src="https://assets.codepen.io/285131/acme-2.svg" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css" />
+    
+    <title>221MI2602</title>
+  </head>
+  <body>
+    <div class="banner-outer">
+      <div class="banner-inner responsive-wrapper">
+        <p>Save up to 70% on selected merch. <a href="#">Go to sale</a></p>
       </div>
-      <nav class="header-navigation">
+    </div>
+    <!-- Sticky header -->
+    <header class="header-outer">
+      <div class="header-inner">
+        <div class="header-logo">
+          <img src="https://assets.codepen.io/285131/acme-2.svg" />
+        </div>
+        <nav class="header-navigation">
           <a href="">Trang chủ</a>
           <a href="">Đặt phòng</a>
           <a href="">Đặt dịch vụ</a>
           <a href="">Giới thiệu</a>
           <a href="">Liên hệ</a>
-        <button>☰</button>
-      </nav>
-    </div>
-  </header>
+          <button>☰</button>
+        </nav>
+      </div>
+    </header>
 
-<!-- Content -->
-<main class="main">
-	<div class="main-content responsive-wrapper">
-    <div id="slideshow">
-      <div class="slide-wrapper">
-        <div class="slide"><img src="../assets/img/normal_1366x768-01.jpg" alt="scenery-01"></div>
-        <div class="slide"><img src="../assets/img/normal_1366x768-02.jpg" alt="scenery-02"></div>
-        <div class="slide"><img src="../assets/img/normal_1366x768-03.jpg" alt="scenery-03"></div>
+    <!-- Content -->
+    <main class="main">
+      <div class="main-content responsive-wrapper">
+        <div id="slideshow">
+          <div class="slide-wrapper">
+            <div class="slide fade" id="active">
+              <div class="numbertext">1 / 3</div>
+              <img
+                src="../assets/img/normal_1366x768-01.jpg"
+                alt="scenery-01"
+              />
+              <div class="text">Nội Dung 1</div>
+            </div>
+            <div class="slide fade">
+              <div class="numbertext">2 / 3</div>
+              <img
+                src="../assets/img/normal_1366x768-02.jpg"
+                alt="scenery-02"
+              />
+              <div class="text">Nội Dung 2</div>
+            </div>
+            <div class="slide fade">
+              <div class="numbertext">3 / 3</div>
+              <img
+                src="../assets/img/normal_1366x768-03.jpg"
+                alt="scenery-03"
+              />
+              <div class="text">Nội Dung 3</div>
+            </div>
+             <!-- Nút điều khiển mũi tên-->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+          <br>
+          <!-- Nút tròn điều khiển slideshow-->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+        <article class="widget">
+          <h2>How does it work without JS? 🤯</h2>
+          <p>
+            This sticky header consists of two elements: an
+            <strong>outer</strong> and an <strong>inner</strong> container. The
+            outer container is taller than the inner — and the inner is centered
+            vertically.
+          </p>
+          <p>
+            By utilizing the <code>position: sticky</code> property
+            <strong>twice</strong>, both on the header's
+            <strong>outer container</strong> and
+            <strong>inner container</strong> the outer container will stick to
+            the <code>body</code>, while the inner container will stick to the
+            outer container.
+          </p>
+          <p>
+            Note that the outer container has a negative <code>top</code> value
+            equal to the height difference between the two containers. This
+            causes the outer container to stick <strong>above</strong> the
+            <code>body</code>, making the inner container stick to the "ceiling"
+            on scroll.
+          </p>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+	<section class="footer-container">
+    <div class="footer-column">
+      <ul class="footer-listmenu">
+        <li><a href="">Nội quy khách sạn</a></li>
+        <li><a href="">Quy chế hoạt động</a></li>
+        <li><a href="">Cảnh báo giả mạo</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <ul class="footer-listmenu">
+        <li>
+          <a href="">Giới thiệu khách sạn</a>
+        </li>
+        <li>
+            <a href="">Gửi góp ý, khiếu nại</a>
+        </li>
+        <li>
+            <a href="">Tìm phòng</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <div class="footer-listtel">
+        <p class="footer-listtel__title">
+          <strong>Tổng đài hỗ trợ:</strong>
+          Miễn phí gọi
+        </p>
+        <p class="footer-listtel__content">
+          <span>Gọi đặt phòng:</span>
+          <a href="tel:0966193904">0966.193.904</a>
+          (7:30 - 22:00)
+        </p>
+        <p class="footer-listtel__content">
+          <span>Bộ phận kỹ thuật:</span>
+          <a href="tel:0966193904">0966.193.904</a>
+          (7:30 - 22:00)
+        </p>
+        <p class="footer-listtel__content">
+          <span>Khiếu nại:</span>
+          <a href="tel:0966193904">0966.193.904</a>
+          (7:30 - 22:00)
+        </p>
+        <p class="footer-listtel__content">
+          <span>Hỗ trợ khách hàng:</span>
+          <a href="tel:0966193904">0966.193.904</a>
+          (7:30 - 22:00)
+        </p>
       </div>
     </div>
-		<article class="widget">
-			<h2>How does it work without JS? 🤯</h2>
-			<p>This sticky header consists of two elements: an <strong>outer</strong> and an <strong>inner</strong> container. The outer container is taller than the inner — and the inner is centered vertically.
-			<p>By utilizing the <code>position: sticky</code> property <strong>twice</strong>, both on the header's <strong>outer container</strong> and <strong>inner container</strong> the outer container will stick to the <code>body</code>, while the inner container will stick to the outer container.</p>
-			<p>Note that the outer container has a negative <code>top</code> value equal to the height difference between the two containers. This causes the outer container to stick <strong>above</strong> the <code>body</code>, making the inner container stick to the "ceiling" on scroll.
-		</article>
-	</div>
-</main>
-</body>
+    <div class="footer-column">
+      <div class="footer-social">
+        <a href="" class="link-fb"></a>
+        <a href="" class="link-ytb"></a>
+        <a ref="nottofollow" href="" target="_blank" class="imgzalo"></a>
+      </div>
+      <div class="footer-certify">
+        <a rel="nofollow" href="http://online.gov.vn/Home/WebDetails/20090" target="_blank">
+            <i class="icon-congthuong"></i>
+        </a>
+        <a rel="nofollow" href="/tos#giai-quyet-khieu-nai" target="_blank">
+            <i class="icon-khieunai"></i>
+        </a>
+        <a rel="nofollow" class="dmca-badge" href="https://www.dmca.com/Protection/Status.aspx?ID=5b62e759-2a0c-4d86-b972-af903bfbc89d&amp;refurl=https://www.thegioididong.com/" target="_blank">
+            <i class="icon-protected"></i>
+        </a>
+        <a class="_ncsc" rel="nofollow" href="https://tinnhiemmang.vn/danh-ba-tin-nhiem/thegioididongcom-1632835473" title="Chung nhan Tin Nhiem Mang" target="_blank">
+            <img class="lazy lazyloaded" data-original="https://tinnhiemmang.vn/handle_cert?id=thegioididong.com" data-src="https://tinnhiemmang.vn/handle_cert?id=thegioididong.com" width="150" alt="Chung nhan Tin Nhiem Mang" src="https://tinnhiemmang.vn/handle_cert?id=thegioididong.com">
+        </a>
+    </div>
+    <div class="f-website">
+      <div class="footer__logo">
+          <p class="footer__logo-hd">Website cùng tập đoàn</p>
+          <ul class="footer__logo-list">
+              <li>
+                  <a rel="nofollow" href="https://www.topzone.vn/" target="_blank" title="Chuỗi cửa hàng cao cấp Apple">
+                      <i class="iconlogo-topzone"></i>
+                  </a>
+              </li>
+              <li>
+                  <a rel="nofollow" href="https://www.dienmayxanh.com/" target="_blank">
+                      <i class="iconlogo-dienmayxanh"></i>
+                  </a>
+              </li>
+              <li>
+                  <a rel="nofollow" href="https://www.bachhoaxanh.com/" target="_blank">
+                      <i class="iconlogo-bachhoaxanh"></i>
+                  </a>
+              </li>
+              <li>
+                  <a rel="nofollow" href="https://www.nhathuocankhang.com/" target="_blank" title="Chuỗi nhà thuốc chuẩn GPP">
+                      <i class="iconlogo-ankhang"></i>
+                  </a>
+              </li>
+              <li>
+                  <a rel="nofollow" href="https://www.avakids.com/" target="_blank" title="Chuỗi cửa hàng mẹ và bé">
+                      <i class="iconlogo-kids"></i>
+                  </a>
+              </li>
+              <li>
+                  <a rel="nofollow" href="https://www.avasport.com/" target="_blank" title="Chuỗi cửa hàng thể thao">
+                      <i class="iconlogo-sport"></i>
+                  </a>
+              </li>
+              <li>
+                  <a rel="nofollow" href="https://www.dichvutantam.com/" target="_blank" title="Dịch vụ vệ sinh máy lạnh, sửa chữa điện nước, lắp đặt máy lạnh, máy giặt, tivi">
+                      <i class="iconlogo-tantam"></i>
+                  </a>
+              </li>
+              <li>
+                  <a rel="nofollow" href="https://www.4kfarm.com/" target="_blank" title="Nông trại rau sạch">
+                      <i class="iconlogo-4kfarm"></i>
+                  </a>
+              </li>
+              <li>
+                  <a rel="nofollow" href="https://vieclam.thegioididong.com/" target="_blank" title="Trang tuyển dụng của tập đoàn Thế Giới Di Động">
+                      <i class="iconlogo-vieclam"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+    </div>
+  </section>
+  <div class="copyright"></div>
+    </footer>
+  </body>
+  <script src="../javascript/home.js"></script>
 </html>
