@@ -1,0 +1,53 @@
+.carousel-item > img {
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(50%);
+}
+
+.carousel-caption {
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.carousel-caption > p,
+.carousel-caption > h3 {
+  margin: 0;
+  padding: 0;
+}
+.highlight {
+  color: yellow;
+}
+.btn {
+    background-color: #F9AB0C;
+    margin-top: 5vh;
+}
+.btn:hover {
+    background-color: olive;
+}
+.carousel-caption h3 {
+    font-weight: bold;
+    font-size: 1.2em; /* small size since this is the default in Bootstrap */
+}
+
+.carousel-caption p {
+    font-size: 1em; /* small size since this is the default in Bootstrap */
+}
+@media (min-width: 576px) { /*Small devices (landscape phones, 576px and up)*/
+  .carousel-caption h3 { font-size: 1.3em;}
+  .carousel-caption p {font-size: 1.1em;}  
+}
+@media (min-width: 768px) {/* Medium devices (tablets, 768px and up)*/
+  .carousel-caption h3 { font-size: 1.4em;}
+  .carousel-caption p {font-size: 1.2em;}  
+}
+@media (min-width: 992px) { /*Large devices (desktops, 992px and up)*/
+  .carousel-caption h3 { font-size: 1.5em;}
+  .carousel-caption p {font-size: 1.3em;}  
+}
+@media (min-width: 1200px) { /*Extra large devices (large desktops, 1200px and up)*/
+  .carousel-caption h3 { font-size: 1.6em;}
+  .carousel-caption p {font-size: 1.4em;}  
+}

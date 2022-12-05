@@ -1,0 +1,58 @@
+.image-cropper {
+  padding: 0;
+  width: 15vw;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  margin-right: 1.5%;
+  border-radius: 5%;
+}
+#firstcontainer {
+  top: 50%;
+  transform: translateY(-50%);
+}
+#secondcontainer {
+  top: 80%;
+  transform: translateY(-80%);
+}
+#thirdcontainer {
+  top: 30%;
+  transform: translateY(-30%);
+}
+.photo {
+  width: auto;
+  height: 100%;
+  position: absolute;
+
+} 
+#firstimage {
+  top: 0;
+  left: -15%;
+  
+}
+#secondimage {
+  top: 0;
+  left: -30%;
+}
+#thirdimage {
+  top: 0;
+
+  right: -100%;
+}
+
+/* #rectangular {
+  -webkit-clip-path: inset(0 20% 0 20%);
+  clip-path: inset(0 20% 0 20%);
+}
+#circle {
+  -webkit-clip-path: circle(75px at 50% 50%);
+  clip-path: circle(75px at 50% 50%);
+}
+#ellipse {
+  -webkit-clip-path: ellipse(75px 50px at 50% 50%);
+  clip-path: ellipse(75px 50px at 50% 50%);
+}
+#polygon {
+  -webkit-clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+  clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+} */
