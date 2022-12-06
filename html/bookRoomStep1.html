@@ -1,0 +1,219 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../assets/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="../assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.3/css/bootstrap.min.css"
+    />
+    <title>Booking Room</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+        position: relative;
+        color: white;
+      }
+      header > img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -50%;
+        filter: brightness(50%);
+        z-index: -1;
+      }
+      .main {
+        background-color: #e8e4d8;
+        width: 100%;
+        height: auto;
+      }
+      /* Card Section */
+      div.section {
+        max-width: 50%;
+        flex: 1;
+      }
+      div.section > img {
+        width: 60%;
+        height: auto;
+      }
+      .card {
+        width: 80vw;
+        height: 40vh;
+        margin: 5% auto;
+      }
+      .btn-primary {
+        background-color: #f9ab0c;
+        border-color: #f9ab0c;
+      }
+
+      .card-img-top {
+        width: 30%;
+      }
+      .card-body {
+        width: 70%;
+      }
+      .card-body > div {
+        min-height: 20vh;
+      }
+      .card-img-top > img {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 768px) {
+        #searchArea {
+          width: 80vw;
+          height: 40vh;
+        }
+        #footerLogo {
+          text-align: center;
+        }
+      }
+      @media (min-width: 768px) {
+        #searchArea {
+          width: 80vw;
+          height: 10vh;
+        }
+      }
+      .indicators {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        margin: 0 auto;
+      }
+      .dot {
+  height: 25px;
+  width: 25px;
+  background-color: #F9AB0C;
+  border-radius: 50%;
+  display: inline-block;
+}
+.currentStep {
+    height: 35px;
+  width: 35px;
+  background-color: white;
+  border: solid #F9AB0C;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 2.5px 0;
+}
+.notCurrentStep {
+    height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border: solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 2.5px 0;
+}
+    </style>
+    <script async>
+      $.get("../html/navigationBar.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("../html/footer.html", "", function (data) {
+        $(".main").append(data);
+      });
+    </script>
+  </head>
+  <body>
+    <header
+      class="d-md-flex justify-content-center align-items-center text-center"
+    >
+      <img src="../assets/img/Luxury/luxury_11.jpg" alt="" />
+      <div>
+        <p>Welcome to <span style="color: #ffd027">Le Meileur Hôtel</span></p>
+        <h1>Loại phòng</h1>
+        <a href="#" class="btn btn-primary">Đặt phòng</a>
+      </div>
+    </header>
+    <div class="main">
+      <div
+        class="d-flex flex-column flex-md-row rounded"
+        id="searchArea"
+        style="margin: 0 auto; background-color: #fff"
+      >
+        <div class="text-center" style="flex: 2">
+          <p style="margin: 0 0 1% 0">Ngày nhận phòng</p>
+          <input type="date" name="" id="" />
+        </div>
+        <div class="text-center" style="flex: 2">
+          <p style="margin: 0 0 1% 0">Ngày trả phòng</p>
+          <input type="date" name="" id="" readonly />
+        </div>
+        <div class="text-center" style="flex: 2">
+          <p style="margin: 0 0 1% 0">Số lượng người</p>
+          <select name="" id="">
+            <option value="">2 người lớn, 1 trẻ nhỏ</option>
+            <option value="">2 người lớn</option>
+            <option value="">1 người lớn, 1 trẻ nhỏ</option>
+            <option value="">1 người lớn</option>
+          </select>
+        </div>
+        <div class="d-md-flex align-items-center text-center" style="flex: 1">
+          <a href="#" class="btn btn-primary">Tìm kiếm</a>
+        </div>
+      </div>
+      <div class="indicators">
+        <span class="currentStep text-center">
+            <span class="dot text-center">1</span>
+    </span>
+<span class="notCurrentStep text-center"><span class="dot text-center">2</span></span>
+<span class="notCurrentStep text-center"><span class="dot text-center">3</span></span>
+      </div>
+      <h2>THÔNG TIN CÁ NHÂN</h2>
+      <div class="main-content d-flex flex-md-row">
+        <div class="section">
+            <div>
+                <span>Danh xưng</span>
+            </div>
+            <div>
+                <span>Tên (Vui lòng gõ tiếng Việt CÓ dấu)</span>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+                <span>Quốc tịch</span>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+                <span>Địa chỉ email</span>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+                <span>Phone Number</span>
+                <input type="text" name="" id="">
+            </div>  
+            <span><input type="checkbox" name="" id="">Đặt phòng hộ người thân</span>
+            <div>Thanh toán bằng:
+              <input type="radio" name="" id="">Thanh toán bằng thẻ ngân hàng
+              <input type="radio" name="" id="">Thanh toán bằng ví điện tử
+            </div>
+            
+        </div>
+        <div class="section">
+          <img src="../assets/img/Luxury/luxury_01.png" alt="">
+        </div>
+      </div>
+      <h3>Sự đồng ý bắt buộc</h3>
+      <p>Bằng cách đánh dấu vào các ô bên dưới, tôi xác nhận và hiểu rằng cần có sự đồng ý bắt buộc sau đây để trở thành thành viên của “Tên khách sạn”.</p>
+      <div>
+        <input type="checkbox" name="" id="">
+        <span>Tôi đã đọc và đồng ý với Điều khoản Sử dụng, Điều khoản và Điều kiện của “Tên khách sạn”, và dữ liệu cá nhân của tôi được thu thập, sử dụng, chia sẻ và chuyển giao theo Tuyên bố và Quyền riêng tư Toàn cầu của “Tên khách sạn”. (Yêu cầu)</span>
+      </div>
+      <div>
+        <input type="checkbox" name="" id="">
+        <span>Tôi đồng ý với việc chuyển xuyên biên giới dữ liệu cá nhân của tôi cho tập đoàn “Tên khách sạn” vì các mục đích được mô tả trong Tuyên bố và Quyền riêng tư Toàn cầu của “Tên khách sạn”, bao gồm cả việc đăng ký của tôi vào “Tên khách sạn” và việc tôi nhận được các dịch vụ thành viên và các lợi ích liên quan. (Yêu cầu)</span>
+      </div>
+      <h3>Chính sách Hủy phòng Khách sạn</h3>
+      <p>Bạn có thể hủy đặt phòng miễn phí trước 11:59 giờ đêm theo giờ địa phương của khách sạn vào ngày 22 tháng 10 năm 2022 ( 1 ngày trước khi đến). Xin lưu ý rằng chúng tôi sẽ tính phí 3.231.900 VND nếu bạn phải hủy sau thời hạn này. Nếu bạn đã thanh toán trước, chúng tôi sẽ giữ lại toàn bộ hoặc một phần khoản thanh toán trước của bạn. Nếu không, chúng tôi sẽ tính phí vào thẻ tín dụng của bạn.</p>
+      <a href="#" class="btn btn-primary">Tiếp tục</a>
+    </div>
+  </body>
+</html>
