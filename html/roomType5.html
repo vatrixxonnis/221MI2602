@@ -1,0 +1,399 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deluxe Ocean</title>
+    <script src="../assets/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="../assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.3/css/bootstrap.min.css"
+    />
+    <script async>
+      $.get("../html/navigationBar.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("../html/footer.html", "", function (data) {
+        $("body").append(data);
+      });
+    </script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      header {
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+        position: relative;
+        color: white;
+      }
+      header > img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -50%;
+        filter: brightness(50%);
+        z-index: -1;
+      }
+      div#backgroundImage {
+        z-index: -1;
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 100%;
+        height: 240vh;
+        overflow: hidden;
+      }
+      div#backgroundImage > img {
+        width: 175%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -38%;
+      }
+      div#mainContent {
+        width: 100%;
+        height: 240vh;
+        color: black;
+      }
+      div.container-fluid {
+        background-color: transparent;
+        width: 78%;
+        height: auto;
+      }
+      section.content {
+        flex: 1;
+        max-width: 50%;
+      }
+      .vertical-line {
+        width: 0;
+        height: 250px;
+        background-color: black;
+        border: 3px solid black;
+        border-radius: 0.375rem;
+      }
+      #large-picture {
+        margin-top: 300px;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: auto;
+      }
+      #large-picture > img {
+        width: 100%;
+        height: 50%;
+      }
+      #roomInfo > img {
+        width: 20%;
+        height: auto;
+      }
+      #roomInfo > img:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+      .form-container-person {
+        width: 30%;
+        height: 5vh;
+        color: white;
+        background-color: black;
+      }
+      .form-select {
+        color: white;
+        background-color: black;
+        border-style: none;
+        width: 5em;
+      }
+      .form-container-date {
+        width: 50%;
+        height: 5vh;
+        color: white;
+        background-color: black;
+      }
+      input[type="date"].pickingDate::-webkit-inner-spin-button,
+      input[type="date"].pickingDate::-webkit-calendar-picker-indicator {
+        display: none;
+        /* -webkit-appearance: none; */
+      }
+      .pickingDate {
+        width: 30%;
+        background-color: black;
+        color: white;
+        border-style: none;
+      }
+      /* Card Section */
+      .card {
+        width: 20vw;
+        height: 80vh;
+        /* margin: 1.5% 1.5%; */
+      }
+      .btn-primary {
+        background-color: #f9ab0c;
+        border-color: #f9ab0c;
+      }
+
+      .card-img-top,
+      .card-body {
+        height: 50%;
+      }
+      .card-body > div {
+        min-height: 30vh;
+      }
+      .card-img-top > img {
+        width: 100%;
+        height: auto;
+      }
+      .card-text {
+        min-height: 15vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="d-md-flex justify-content-center align-items-center text-center"
+    >
+      <img src="../assets/img/Luxury/luxury_11.jpg" alt="" />
+      <div>
+        <p>Welcome to <span style="color: #ffd027">Le Meileur Hôtel</span></p>
+        <h1>Loại phòng</h1>
+        <a href="#" class="btn btn-primary">Đặt phòng</a>
+      </div>
+    </header>
+    <main>
+      <div id="backgroundImage">
+        <img src="../assets/img/Luxury/luxury_04.jpg" alt="" />
+      </div>
+      <div id="mainContent">
+        <!-- Section -->
+        <div class="container-fluid d-flex flex-row">
+          <section class="content">
+            <h3>05</h3>
+            <div class="vertical-line"></div>
+            <h3>Phòng Executive Suite</h3>
+            <p>
+              Phòng Executive Suite có diện tích phòng 65m², nằm trên 2 tầng cao
+              nhất của khách sạn. Tiện nghi hiện đại, phòng khách sang trọng,
+              phòng tắm rộng rãi và phòng ngủ riêng mang đến trải nghiệm thư
+              giãn đẳng cấp.
+              <br />
+              <span class="fw-bold">Diện tích:</span>65m<sup>2</sup>
+            </p>
+            <h2>
+              <span class="fs-1">$</span>
+              <span class="fs-2">200</span><span class="fs-3">/đêm</span>
+            </h2>
+            <div>
+              <span class="fw-bold">TRANG THIẾT BỊ TRONG PHÒNG</span>
+              <ul>
+                <li>1 giường King/ 2 giường Twin</li>
+                <li>2 ghế thư giãn và bàn</li>
+                <li>1 bàn ghế trang điểm</li>
+                <li>Wifi miễn phí</li>
+              </ul>
+            </div>
+
+            <div>
+              <span class="fw-bold">TIVI & ĐIỆN THOẠI</span>
+              <ul>
+                <li>Tivi truyền hình cáp</li>
+                <li>Màn hình LCD 43″</li>
+                <li>Điện thoại</li>
+              </ul>
+            </div>
+            <div>
+              <span class="fw-bold">PHÒNG TẮM</span>
+              <ul>
+                <li>Phòng tắm đứng</li>
+                <li>Đầy đủ vật dụng phòng tắm</li>
+                <li>Áo choàng tắm</li>
+                <li>Móc áo, dép đi trong phòng</li>
+                <li>Máy sấy tóc</li>
+              </ul>
+            </div>
+            <div>
+              <span class="fw-bold">DỊCH VỤ KHÁC</span>
+              <ul>
+                <li>Minibar</li>
+                <li>Két sắt an toàn</li>
+                <li>Ấm đun siêu tốc</li>
+              </ul>
+            </div>
+          </section>
+          <section class="content">
+            <div id="large-picture">
+              <img src="../assets/img/Luxury/luxury_56.png" alt="" />
+            </div>
+            <div class="d-flex flex-row justify-content-between" id="roomInfo">
+              <img src="../assets/img/Luxury/luxury_01.png" alt="" />
+              <img src="../assets/img/Luxury/luxury_02.png" alt="" />
+              <img src="../assets/img/Luxury/luxury_03.jpg" alt="" />
+              <img src="../assets/img/Luxury/luxury_04.jpg" alt="" />
+            </div>
+            <div
+              class="d-flex flex-row justify-content-evenly"
+              style="margin-top: 5%"
+            >
+              <!-- Person -->
+              <div
+                class="d-flex flex-row form-container-person align-items-center"
+              >
+                <img
+                  class="svg"
+                  src="../assets/stuff/choosePeople.svg"
+                  alt=""
+                />
+                <select class="form-select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <span>người</span>
+              </div>
+              <!-- Date -->
+              <div
+                class="d-flex flex-row form-container-date align-items-center"
+              >
+                <img
+                  class="svg"
+                  src="../assets/stuff/chooseDate.svg"
+                  style="margin-right: 5%"
+                  alt=""
+                />
+                <input
+                  type="date"
+                  name="start-date"
+                  id="start-date"
+                  class="pickingDate"
+                />
+                <span>&nbsp;-&nbsp;</span>
+                <input
+                  type="date"
+                  name="end-date"
+                  id="end-date"
+                  class="pickingDate"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          class="d-flex flex-md-row flex-column flex-wrap justify-content-evenly"
+          style="row-gap: 3em"
+        >
+          <div class="card d-flex">
+            <img
+              class="card-img-top"
+              src="../assets/img/Luxury/luxury_01.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Phòng Deluxe Ocean</h4>
+              <p class="card-text">
+                Deluxe Ocean View mang đến cho du khách một cảm giác thư thái
+                tuyệt vời với nội thất trang trí hiện đại, tinh tế kết hợp với
+                cửa sổ có tầm nhìn rộng hướng ra một phần biển thơ mộng, tươi
+                mát.
+              </p>
+              <a href="#" class="btn btn-primary">Đặt phòng</a>
+            </div>
+          </div>
+
+          <div class="card d-flex">
+            <img
+              class="card-img-top"
+              src="../assets/img/Luxury/luxury_22.jpg"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <div>
+                <h4 class="card-title">Phòng Junior Suite</h4>
+                <p class="card-text">
+                  Phòng Junior Suite thích hợp cho các cặp uyên ương muốn tận
+                  hưởng cảm giác xa hoa, sang trọng và lãng mạng tuyệt vời, tận
+                  hưởng mà không bao giờ thấy "chán" bởi sự tiện nghi và thiết
+                  kế đẹp mắt mà căn phòng này mang lại.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary">Đặt phòng</a>
+            </div>
+          </div>
+
+          <div class="card d-flex">
+            <img
+              class="card-img-top"
+              src="../assets/img/Luxury/luxury_24.jpg"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <div>
+                <h4 class="card-title">Phòng Club Suite</h4>
+                <p class="card-text">
+                  Được trang trí sang trọng theo phong cách cổ điển đặc trưng,
+                  ​​phòng Club Suite sở hữu phòng khách và phòng ngủ rộng, là
+                  nơi thư giãn lý tưởng sau một ngày dài. Đặc biệt, lưu trú tại
+                  phòng Club Suite, bạn sẽ được hưởng quyền lợi dành cho khách
+                  VIP.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary">Đặt phòng</a>
+            </div>
+          </div>
+
+          <div class="card d-flex">
+            <img
+              class="card-img-top"
+              src="../assets/img/Luxury/luxury_55.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <div>
+                <h4 class="card-title">Phòng Family Suite</h4>
+                <p class="card-text">
+                  Được trang trí sang trọng theo phong cách cổ điển đặc trưng,
+                  ​​phòng Club Suite sở hữu phòng khách và phòng ngủ rộng, là
+                  nơi thư giãn lý tưởng sau một ngày dài. Đặc biệt, lưu trú tại
+                  phòng Club Suite, bạn sẽ được hưởng quyền lợi dành cho khách
+                  VIP.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary">Đặt phòng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var today = new Date();
+        $("#start-date").val(
+          today.getFullYear() + "-" + today.getMonth() + "-" + today.getDate()
+        );
+        $("#end-date").val(
+          today.getFullYear() +
+            "-" +
+            today.getMonth() +
+            "-" +
+            (today.getDate() + 4)
+        );
+        console.log($("#start-date").val());
+        document.querySelectorAll("input.pickingDate").forEach((input) => {
+          input.addEventListener("click", (event) => {
+            const input = event.srcElement;
+            // const input = event.srcElement.nextElementSibling;
+            try {
+              input.showPicker();
+            } catch (error) {
+              window.alert(error);
+            }
+          });
+        });
+
+        $(document).on("click", "#roomInfo img", function () {
+          var newImage = $(this).attr("src");
+          var currentImage = $("#large-picture img").attr("src");
+          $("#large-picture img").attr("src", newImage);
+          $(this).attr("src", currentImage);
+        });
+      </script>
+    </main>
+  </body>
+</html>
