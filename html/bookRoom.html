@@ -1,0 +1,166 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../assets/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="../assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.3/css/bootstrap.min.css"
+    />
+    <title>Booking Room</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+        position: relative;
+        color: white;
+      }
+      header > img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -50%;
+        filter: brightness(50%);
+        z-index: -1;
+      }
+      .main {
+        background-color: #E8E4D8;
+        width: 100%;
+        height: auto;
+        
+      }
+      /* Card Section */
+      .card {
+        width: 80vw;
+        height: 40vh;
+        margin: 5% auto;
+      }
+      .btn-primary {
+        background-color: #f9ab0c;
+        border-color: #f9ab0c;
+      }
+
+      .card-img-top {
+        width: 30%;
+      }
+      .card-body {
+        width: 70%;
+      }
+      .card-body > div {
+        min-height: 20vh;
+      }
+      .card-img-top > img {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 768px) {
+        #searchArea {
+          width: 80vw;
+          height: 40vh;
+        }
+        #footerLogo {
+          text-align: center;
+        }
+      }
+      @media (min-width: 768px) {
+        #searchArea {
+          width: 80vw;
+          height: 10vh;
+        }
+      }
+    </style>
+    <script async>
+      $.get("../html/navigationBar.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("../html/footer.html", "", function (data) {
+        $(".main").append(data);
+      });
+    </script>
+  </head>
+  <body>
+    <header
+      class="d-md-flex justify-content-center align-items-center text-center"
+    >
+      <img src="../assets/img/Luxury/luxury_11.jpg" alt="" />
+      <div>
+        <p>Welcome to <span style="color: #ffd027">Le Meileur Hôtel</span></p>
+        <h1>Loại phòng</h1>
+        <a href="#" class="btn btn-primary">Đặt phòng</a>
+      </div>
+    </header>
+    <div class="main">
+      <div
+        class="d-flex flex-column flex-md-row rounded"
+        id="searchArea"
+        style="margin: 0 auto; background-color: #fff"
+      >
+        <div class="text-center" style="flex: 2">
+          <p style="margin: 0 0 1% 0">Ngày nhận phòng</p>
+          <input type="date" name="" id="" />
+        </div>
+        <div class="text-center" style="flex: 2">
+          <p style="margin: 0 0 1% 0">Ngày trả phòng</p>
+          <input type="date" name="" id="" readonly />
+        </div>
+        <div class="text-center" style="flex: 2">
+          <p style="margin: 0 0 1% 0">Số lượng người</p>
+          <select name="" id="">
+            <option value="">2 người lớn, 1 trẻ nhỏ</option>
+            <option value="">2 người lớn</option>
+            <option value="">1 người lớn, 1 trẻ nhỏ</option>
+            <option value="">1 người lớn</option>
+          </select>
+        </div>
+        <div class="d-md-flex align-items-center text-center" style="flex: 1">
+          <a href="#" class="btn btn-primary">Tìm kiếm</a>
+        </div>
+      </div>
+      <!-- Choose Room Section -->
+      <div class="card d-flex flex-row">
+        <img
+          class="card-img-top"
+          src="../assets/img/Luxury/luxury_01.png"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <div>
+            <h4 class="card-title">Phòng Deluxe Ocean</h4>
+            <p class="card-text">
+              Deluxe Ocean View mang đến cho du khách một cảm giác thư thái tuyệt
+              vời với nội thất trang trí hiện đại, tinh tế kết hợp với cửa sổ có
+              tầm nhìn rộng hướng ra một phần biển thơ mộng, tươi mát.
+            </p>
+          </div>
+          <a href="#" class="btn btn-primary">Đặt phòng</a>
+        </div>
+      </div>
+      <div class="card d-flex flex-row">
+        <img
+          class="card-img-top"
+          src="../assets/img/Luxury/luxury_22.jpg"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <div>
+            <h4 class="card-title">Phòng Junior Suite</h4>
+            <p class="card-text">
+              Phòng Junior Suite thích hợp cho các cặp uyên ương muốn tận hưởng
+              cảm giác xa hoa, sang trọng và lãng mạng tuyệt vời, tận hưởng mà
+              không bao giờ thấy "chán" bởi sự tiện nghi và thiết kế đẹp mắt mà
+              căn phòng này mang lại.
+            </p>
+          </div>
+          <a href="#" class="btn btn-primary">Đặt phòng</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
