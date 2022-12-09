@@ -1,0 +1,96 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../assets/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="../assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/bootstrap-5.2.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/bookRoom.css">
+    <title>Booking Room</title>
+    <script async>
+      $.get("../html/navigationBar.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("../html/footer.html", "", function (data) {
+        $(".main").append(data);
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="../assets/img/Luxury/luxury_11.jpg" alt="" />
+      <div
+        class="d-flex flex-column justify-content-center align-items-center card-img-overlay"
+      >
+        <p>Welcome to <span style="color: #ffd027">Le Meileur Hôtel</span></p>
+        <h2>Loại phòng</h2>
+        <a href="#" class="btn" id="btn-book">Đặt ngay</a>
+      </div>
+      <div class="d-flex flex-column flex-md-row rounded" id="searchArea">
+        <div>
+          <p>Ngày nhận phòng</p>
+          <input type="date" name="" id="" />
+        </div>
+        <div>
+          <p>Ngày trả phòng</p>
+          <input type="date" name="" id="" readonly />
+        </div>
+        <div>
+          <p>Số lượng người</p>
+          <select name="" id="">
+            <option value="">2 người lớn, 1 trẻ nhỏ</option>
+            <option value="">2 người lớn</option>
+            <option value="">1 người lớn, 1 trẻ nhỏ</option>
+            <option value="">1 người lớn</option>
+          </select>
+        </div>
+        <div class="d-md-flex align-items-center text-center">
+          <a href="#" class="btn" id="searchRoomButton">
+            Tìm kiếm
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+
+      <!-- Choose Room Section -->
+      <div class="card d-flex flex-row">
+        <img
+          class="card-img-top"
+          src="../assets/img/Luxury/luxury_01.png"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <div>
+            <h4 class="card-title">Phòng Deluxe Ocean</h4>
+            <p class="card-text">
+              Deluxe Ocean View mang đến cho du khách một cảm giác thư thái tuyệt
+              vời với nội thất trang trí hiện đại, tinh tế kết hợp với cửa sổ có
+              tầm nhìn rộng hướng ra một phần biển thơ mộng, tươi mát.
+            </p>
+          </div>
+          <a href="./bookRoomStep1.html" class="btn btn-primary">Đặt phòng</a>
+        </div>
+      </div>
+      <div class="card d-flex flex-row">
+        <img
+          class="card-img-top"
+          src="../assets/img/Luxury/luxury_22.jpg"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <div>
+            <h4 class="card-title">Phòng Junior Suite</h4>
+            <p class="card-text">
+              Phòng Junior Suite thích hợp cho các cặp uyên ương muốn tận hưởng
+              cảm giác xa hoa, sang trọng và lãng mạng tuyệt vời, tận hưởng mà
+              không bao giờ thấy "chán" bởi sự tiện nghi và thiết kế đẹp mắt mà
+              căn phòng này mang lại.
+            </p>
+          </div>
+          <a href="./bookRoomStep1.html" class="btn btn-primary">Đặt phòng</a>
+        </div>
+      </div>
+  </body>
+</html>

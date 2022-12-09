@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../assets/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="../assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.3/css/bootstrap.min.css"
+    />
+    <title>Booking Room</title>
+  <link rel="stylesheet" href="../css/history.css">
+    <script defer>
+      $.get("../html/navigationBar.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("../html/footer.html", "", function (data) {
+        $(".main").append(data);
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="../assets/img/Luxury/luxury_11.jpg" alt="" />
+      <div
+        class="d-flex flex-column justify-content-center align-items-center card-img-overlay"
+      >
+        <p>Welcome to <span style="color: #ffd027">Le Meileur Hôtel</span></p>
+        <h2>Loại phòng</h2>
+        <a href="#" class="btn" id="btn-book">Đặt ngay</a>
+      </div>
+      <div class="d-flex flex-column flex-md-row rounded" id="searchArea">
+        <div>
+          <p>Ngày nhận phòng</p>
+          <input type="date" name="" id="" />
+        </div>
+        <div>
+          <p>Ngày trả phòng</p>
+          <input type="date" name="" id="" readonly />
+        </div>
+        <div>
+          <p>Số lượng người</p>
+          <select name="" id="">
+            <option value="">2 người lớn, 1 trẻ nhỏ</option>
+            <option value="">2 người lớn</option>
+            <option value="">1 người lớn, 1 trẻ nhỏ</option>
+            <option value="">1 người lớn</option>
+          </select>
+        </div>
+        <div class="d-md-flex align-items-center text-center">
+          <a href="#" class="btn" id="searchRoomButton">
+            Tìm kiếm
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="main-content">
+        <h3>THÔNG TIN CÁ NHÂN</h3>
+        <div class="field">
+          <span>Họ và tên khách hàng</span>
+          <span id="name">Phan Thị Bích Ngọc</span>
+        </div>
+        <div class="field">
+          <span>Địa chỉ email</span>
+          <span id="email">ngocptb20406c@st.uel.edu.vn</span>
+        </div>
+        <div class="field">
+          <span>Phone Number</span>
+          <span id="phone">0913 - xxx - xxx</span>
+        </div>
+      </div>
+      <h3>LỊCH SỬ ĐẶT PHÒNG</h3>
+      <div class="history">
+        <div class="card d-flex flex-row">
+            <img
+              class="card-img-top"
+              src="../assets/img/Luxury/luxury_01.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <div>
+                <h4 class="card-title">Phòng Deluxe Ocean</h4>
+                <div class="card-text">
+                    <div class="field">
+                        <span>Họ và tên khách hàng</span>
+                        <span id="name">Phan Thị Bích Ngọc</span>
+                      </div>
+                      <div class="field">
+                        <span>Địa chỉ email</span>
+                        <span id="email">ngocptb20406c@st.uel.edu.vn</span>
+                      </div>
+                      <div class="field">
+                        <span>Phone Number</span>
+                        <span id="phone">0913 - xxx - xxx</span>
+                      </div>
+                      <div class="field">
+                        <span>Thời gian đặt phòng</span>
+                        <span>20/11/2022 - 22/11/2022</span>
+                      </div>
+                      <div class="field">
+                        <span>Hình thức thanh toán</span>
+                        <span>bằng Momo</span>
+                      </div>
+                      <a href="" class="btn">Hủy phòng</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card d-flex flex-row">
+            <img
+              class="card-img-top"
+              src="../assets/img/Luxury/luxury_22.jpg"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <div>
+                <h4 class="card-title">Phòng Junior Suite</h4>
+                <div class="card-text">
+                    <div class="field">
+                        <span>Họ và tên khách hàng</span>
+                        <span id="name">Phan Thị Bích Ngọc</span>
+                      </div>
+                      <div class="field">
+                        <span>Địa chỉ email</span>
+                        <span id="email">ngocptb20406c@st.uel.edu.vn</span>
+                      </div>
+                      <div class="field">
+                        <span>Phone Number</span>
+                        <span id="phone">0913 - xxx - xxx</span>
+                      </div>
+                      <div class="field">
+                        <span>Thời gian đặt phòng</span>
+                        <span>20/11/2022 - 22/11/2022</span>
+                         
+                      </div>
+                      <div class="field">
+                        <span>Hình thức thanh toán</span>
+                        <span>bằng thẻ ngân hàng</span>
+                      </div>
+                    <a href="" class="btn">Hủy phòng</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>221MI2602</title>
+    <script src="../assets/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="../assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <script async>
+      $.get("./introduction.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("./slideShow.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("./navigationBar.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("./footer.html", "", function (data) {
+        $("body").append(data);
+      });
+    </script>
+  </head>
+  <body>
+    <div
+      class="d-flex flex-column flex-md-row justify-content-md-evenly"
+      id="roomDescription"
+    >
+      <div class="card roomType">
+        <img
+          class="card-img-top"
+          src="../assets/img/Luxury/luxury_01.png"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Phòng Deluxe Ocean</h4>
+          <p class="card-text">
+            Deluxe Ocean View mang đến cho du khách một cảm giác thư thái tuyệt
+            vời với nội thất trang trí hiện đại, tinh tế kết hợp với cửa sổ có
+            tầm nhìn rộng hướng ra một phần biển thơ mộng, tươi mát.
+          </p>
+          <a href="./roomType1.html" class="btn">Xem thêm</a>
+        </div>
+      </div>
+      <div class="card roomType">
+        <img
+          class="card-img-top"
+          src="../assets/img/Luxury/luxury_22.jpg"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Phòng Junior Suite</h4>
+          <p class="card-text">
+            Phòng Junior Suite thích hợp cho các cặp uyên ương muốn tận hưởng
+            cảm giác xa hoa, sang trọng và lãng mạng tuyệt vời, tận hưởng mà
+            không bao giờ thấy "chán" bởi sự tiện nghi và thiết kế đẹp mắt mà
+            căn phòng này mang lại.
+          </p>
+          <a href="./roomType2.html" class="btn">Xem thêm</a>
+        </div>
+      </div>
+      <div class="card roomType">
+        <img
+          class="card-img-top"
+          src="../assets/img/Luxury/luxury_24.jpg"
+          alt="Card image"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Phòng Club Suite</h4>
+          <p class="card-text">
+            Được trang trí sang trọng theo phong cách cổ điển đặc trưng, ​​phòng
+            Club Suite sở hữu phòng khách và phòng ngủ rộng, là nơi thư giãn lý
+            tưởng sau một ngày dài. Đặc biệt, lưu trú tại phòng Club Suite, bạn
+            sẽ được hưởng quyền lợi dành cho khách VIP.
+          </p>
+          <a href="./roomType3.html" class="btn">Xem thêm</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="text-center d-flex flex-column">
+        <h1>Chính sách ưu đãi</h1>
+        <p>Ưu đãi đặc biệt chỉ dành riêng cho bạn</p>
+      </div>
+      <div class="d-flex flex-md-row flex-column justify-content-md-evenly">
+        <div class="card img-fluid eventType">
+          <img
+            class="card-img-top"
+            src="../assets/img/KC_Hill/KC_Hill_021.jpg"
+            alt="Card image"
+          />
+          <div class="card-img-overlay">
+            <div>
+              <h4 class="card-title">Kỉ niệm ngày cưới</h4>
+              <p class="card-text">
+                Kết hợp bữa sáng và spa tại phòng chỉ có tại “Tên khách sạn”.
+              </p>
+            </div>
+            <a href="./event1.html" class="btn text-light btn-outline-light bg-transparent"
+              >Khám phá ngay</a
+            >
+          </div>
+        </div>
+
+        <div class="card img-fluid eventType">
+          <img
+            class="card-img-top"
+            src="../assets/img/KC_Hill/KC_Hill_016.jpg"
+            alt="Card image"
+          />
+          <div class="card-img-overlay">
+            <div>
+              <h4 class="card-title">Nghỉ dưỡng tuyệt vời cùng gia đình</h4>
+              <p class="card-text">
+                Trải nghiệm suối nước nóng ngoài trời và hơn thế nữa...
+              </p>
+            </div>
+            <a href="./event2.html" class="btn text-light btn-outline-light bg-transparent"
+              >Khám phá ngay</a
+            >
+          </div>
+        </div>
+
+        <div class="card img-fluid eventType">
+          <img
+            class="card-img-top"
+            src="../assets/img/KC_Hill/KC_Hill_012.jpg"
+            alt="Card image"
+          />
+          <div class="card-img-overlay">
+            <div>
+              <h4 class="card-title">Honeymoon đáng nhớ</h4>
+              <p class="card-text">
+                Trải nghiệm suối nước nóng ngoài trời và hơn thế nữa...
+              </p>
+            </div>
+            <a href="./event3.html" class="btn text-light btn-outline-light bg-transparent"
+              >Khám phá ngay</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>

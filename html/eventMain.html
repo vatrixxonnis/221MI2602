@@ -1,0 +1,178 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <script src="../assets/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="../assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/eventMain.css" />
+    <script src="../javascript/eventMain.js" defer></script>
+    <script async>
+      $.get("../html/navigationBar.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("../html/footer.html", "", function (data) {
+        $("body").append(data);
+      });
+      
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="../assets/img/Luxury/luxury_18.jpg" alt="" />
+      <div
+        class="d-flex flex-column justify-content-center align-items-center card-img-overlay"
+      >
+        <p>Welcome to <span style="color: #ffd027">Le Meileur Hôtel</span></p>
+        <h2>Sự kiện</h2>
+        <a href="#" class="btn" id="btn-book">Đặt ngay</a>
+      </div>
+    </header>
+    <main>
+      <div id="backgroundImage"></div>
+      <div id="mainContent" class="d-flex flex-column align-items-center">
+        <h1 class="text-center" style="width: 60%">Sự kiện</h1>
+        <!-- Section -->
+        <div class="container-fluid">
+          <p class="text-center">
+            <i
+              >Khám phá những sự kiện không thể bỏ lỡ tại
+              <span style="color: #f9ab0c">Le Meilleur Hôtel</span></i
+            >
+          </p>
+          <div class="d-flex flex-row justify-content-evenly flex-wrap">
+            <div class="card img-fluid eventType">
+              <img
+                class="card-img-top"
+                src="../assets/img/KC_Hill/KC_Hill_021.jpg"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <div>
+                  <h4 class="card-title">Kỉ niệm ngày cưới</h4>
+                  <p class="card-text">
+                    Kết hợp bữa sáng và spa tại phòng chỉ có tại “Tên khách
+                    sạn”.
+                  </p>
+                </div>
+                <a
+                  href="./event3.html"
+                  class="btn text-light btn-outline-light bg-transparent"
+                  >Liên hệ ngay</a
+                >
+              </div>
+            </div>
+
+            <div class="card img-fluid eventType">
+              <img
+                class="card-img-top"
+                src="../assets/img/KC_Hill/KC_Hill_016.jpg"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <div>
+                  <h4 class="card-title">Nghỉ dưỡng tuyệt vời cùng gia đình</h4>
+                  <p class="card-text">
+                    Trải nghiệm suối nước nóng ngoài trời và hơn thế nữa...
+                  </p>
+                </div>
+                <a
+                  href="./event2.html"
+                  class="btn text-light btn-outline-light bg-transparent"
+                  >Liên hệ ngay</a
+                >
+              </div>
+            </div>
+
+            <div class="card img-fluid eventType">
+              <img
+                class="card-img-top"
+                src="../assets/img/KC_Hill/KC_Hill_015.jpg"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <div>
+                  <h4 class="card-title">Honeymoon đáng nhớ</h4>
+                  <p class="card-text">
+                    Trải nghiệm suối nước nóng ngoài trời và hơn thế nữa...
+                  </p>
+                </div>
+                <a
+                  href="./event1.html"
+                  class="btn text-light btn-outline-light bg-transparent"
+                  >Liên hệ ngay</a
+                >
+              </div>
+            </div>
+
+            <div class="card img-fluid eventType">
+              <img
+                class="card-img-top"
+                src="../assets/img/Luxury/luxury_25.jpg"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <div>
+                  <h4 class="card-title">Dành cho các đối tác</h4>
+                  <p class="card-text">
+                    Tận hưởng cảm giác tại không gian sang trọng
+                  </p>
+                </div>
+                <a
+                  href="./event5.html"
+                  class="btn text-light btn-outline-light bg-transparent"
+                  >Liên hệ ngay</a
+                >
+              </div>
+            </div>
+
+            <div class="card img-fluid eventType">
+              <img
+                class="card-img-top"
+                src="../assets/img/Luxury/luxury_26.jpg"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <div>
+                  <h4 class="card-title">Du lịch với hội bạn thân</h4>
+                  <p class="card-text">1001 góc cho bạn thoải mái sống ảo</p>
+                </div>
+                <a
+                  href="./event4.html"
+                  class="btn text-light btn-outline-light bg-transparent"
+                  >Liên hệ ngay</a
+                >
+              </div>
+            </div>
+
+            <div class="card img-fluid eventType">
+              <img
+                class="card-img-top"
+                src="../assets/img/Luxury/luxury_27.jpg"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <div>
+                  <h4 class="card-title">Dành cho customer thân thiết</h4>
+                  <p class="card-text">
+                    Thưởng thức vì các món ăn bởi các đầu bếp chuyên nghiệp
+                  </p>
+                </div>
+                <a
+                  href="./event6.html"
+                  class="btn text-light btn-outline-light bg-transparent"
+                  >Liên hệ ngay</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

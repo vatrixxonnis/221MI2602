@@ -1,0 +1,107 @@
+/* Footer Main */
+footer {
+    margin-top: 5%;
+    overflow-y: hidden;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    font-family: Roboto;
+  }
+footer > div:nth-child(2) {
+    text-align: center;
+    font-size: .5em;
+}
+footer > div:nth-child(2) > span > a {
+    text-decoration: none;
+    color: #e0b973;
+}
+/* Footer child element */
+  #footer-content > div {
+    font-size: .5em;
+  }
+  #footer-content > div:nth-child(1) {
+    width: 20%;
+    padding-left: 1.5%;
+    padding-top: 1.5%;
+  }
+  #footer-content > div:nth-child(2) {
+    width: 30%;
+  }
+  #footer-content > div:nth-child(2) > img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #footer-content > div:nth-child(3) {
+    width: 20%;
+  }
+  #footer-content > div:nth-child(3) > p {
+    margin: 5px 0;
+  }
+  #footer-content > div:nth-child(3) > p > a {
+    text-decoration: none;
+    color: white;
+  }
+  #footer-content > div:nth-child(3) > p > a:hover {
+    color: #FFD027;
+    text-decoration: underline;
+  }
+  #footer-content > div:nth-child(4) {
+    width: 30%;
+  }
+
+#footerLogo {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+  }
+.input-group > input {
+  color: white;
+  background-color: black;
+  border: solid #e0b973;
+}
+.input-group-append > button {
+  background-color: #e0b973;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  color: black;
+  border: solid #e0b973;
+}
+@media screen and (max-width:768px) {
+    #footer-content {
+        row-gap: 10px;
+    }
+    #footer-content > div {
+        font-size: .35em;
+      }
+      #footer-content > div:nth-child(1) {
+        width: 50%;
+      }
+      #footer-content > div:nth-child(1) > p {
+        margin: 0;
+      }
+      #footerLogo {
+        width: 15%;
+        height: auto;
+        margin: 0 auto;
+      }
+      #footer-content > div:nth-child(2) {
+        width: 50%;
+      }
+      #footer-content > div:nth-child(2) > img {
+        width: 90%;
+        height: auto;
+        margin-top: 5%;
+      }
+      #footer-content > div:nth-child(3) {
+        padding-left: 1.5%;
+        width: 50%;
+      }
+      #footer-content > div:nth-child(3) > p {
+        margin: 1px 0;
+      }
+      #footer-content > div:nth-child(4) {
+        width: 50%;
+      }
+}
+
