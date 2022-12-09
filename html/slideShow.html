@@ -1,0 +1,129 @@
+<link rel="stylesheet" href="../css/slideShow.css" />
+<body>
+  <div
+    id="slideShow"
+    class="carousel slide carousel-fade"
+    data-bs-ride="carousel"
+    data-bs-interval="3000"
+    data-bs-pause="false"
+  >
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#slideShow"
+        data-bs-slide-to="0"
+        class="active"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#slideShow"
+        data-bs-slide-to="1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#slideShow"
+        data-bs-slide-to="2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#slideShow"
+        data-bs-slide-to="3"
+      ></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="../assets/img/Luxury/luxury_09.jpg"
+          alt="luxury_09"
+          class="d-block"
+        />
+        <div class="carousel-caption">
+          <p>Welcome to <span class="highlight">Le Meilleur Hôtel</span></p>
+          <h3>Đẳng cấp tạo nên thương hiệu</h3>
+          <button type="button" class="btn" id="bookRoomButton">Đặt phòng</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../assets/img/Luxury/luxury_11.jpg"
+          alt="luxury_11"
+          class="d-block"
+        />
+        <div class="carousel-caption">
+          <p>Welcome to <span class="highlight">Le Meilleur Hôtel</span></p>
+          <h3>Thương hiệu tạo nên đẳng cấp</h3>
+          <button type="button" class="btn" id="bookRoomButton">Đặt phòng</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../assets/img/Luxury/luxury_12.jpg"
+          alt="luxury_12"
+          class="d-block"
+        />
+        <div class="carousel-caption">
+          <p>Welcome to <span class="highlight">Le Meilleur Hôtel</span></p>
+          <h3>Thương hiệu tạo nên đẳng cấp</h3>
+          <button type="button" class="btn" id="bookRoomButton">Đặt phòng</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../assets/img/Luxury/luxury_14.jpg"
+          alt="luxury_14"
+          class="d-block"
+        />
+        <div class="carousel-caption">
+          <p>Welcome to <span class="highlight">Le Meilleur Hôtel</span></p>
+          <h3>Thương hiệu và đẳng cấp</h3>
+          <button type="button" class="btn" id="bookRoomButton">Đặt phòng</button>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row rounded" id="searchArea">
+        <div>
+          <p>Ngày nhận phòng</p>
+          <input type="date" name="" id="" />
+        </div>
+        <div>
+          <p>Ngày trả phòng</p>
+          <input type="date" name="" id="" readonly />
+        </div>
+        <div>
+          <p>Số lượng người</p>
+          <select name="" id="">
+            <option value="">2 người lớn, 1 trẻ nhỏ</option>
+            <option value="">2 người lớn</option>
+            <option value="">1 người lớn, 1 trẻ nhỏ</option>
+            <option value="">1 người lớn</option>
+          </select>
+        </div>
+        <div class="d-md-flex align-items-center text-center">
+          <a href="#" class="btn" id="searchRoomButton">
+            Tìm kiếm
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#slideShow"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#slideShow"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</body>

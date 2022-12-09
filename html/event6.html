@@ -1,0 +1,153 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <script src="../assets/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="../assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/event.css">
+    <script src="../javascript/event.js" defer></script>
+    <script async>
+      $.get("../html/navigationBar.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("../html/footer.html", "", function (data) {
+        $("body").append(data);
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="../assets/img/Luxury/luxury_18.jpg" alt="" />
+      <div
+        class="d-flex flex-column justify-content-center align-items-center card-img-overlay"
+      >
+        <p>Welcome to <span style="color: #ffd027">Le Meileur Hôtel</span></p>
+        <h2>Sự kiện</h2>
+        <a href="#" class="btn" id="btn-book">Đặt ngay</a>
+      </div>
+    </header>
+    <main>
+      <div id="backgroundImage"></div>
+      <div id="mainContent" class="d-flex flex-column">
+        <h1>
+          TRỌN GÓI SWEET HONEYMOON TẠI
+          <span style="color: #f9ab0c">LE MEILLEUR HÔTEL</span>
+        </h1>
+        <p>
+          Vì tình yêu là bản nhạc của hai tâm hồn đồng điệu... Hãy để giai điệu
+          tình yêu ấy ngân vang lên âm hưởng hạnh phúc cùng nến và hoa, trao
+          nhau ánh mắt ngọt ngào bên bữa tiệc lãng mạn dành riêng cho hai người.
+          Tuần trăng mật sẽ còn hoàn hảo hơn nữa khi được cùng nhau đắm chìm
+          trong không gian riêng tư, cùng thưởng thức dư vị ngọt ngào xen của
+          rượu vang hảo hạng, cùng trao nhau những ánh nhìn yêu thương, những
+          chiếc hôn nồng cháy...
+        </p>
+        <div class="text-center shockNews">
+          <h3>
+          Trọn gói HONEYMOON 3 ngày 2 đêm chỉ với $500
+          </h3>
+          <a
+            href="#"
+            class="btn"
+            >Liên hệ ngay</a
+          >
+        </div>
+
+        <div class="card d-flex flex-row eventContent">
+          <div class="card-img">
+            <img src="../assets/img/Luxury/luxury_51.png" alt="Card image" />
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              LE MEILLEUR HÔTEL tọa lạc tại một vị trí lý tưởng cạnh bờ biển
+              rộng lớn trải dài, cảnh đẹp nên thơ, mang đến một khung cảnh lãng
+              mạn tuyệt vời cho chuyến du lịch trăng mật của bạn. Được thiết kế
+              theo kiểu kiến trúc biệt thự Pháp cổ, ấm áp, mang chút hoài niệm
+              kết hợp với khu vườn xanh mát xung quanh tạo nên một nét cuốn hút
+              riêng biệt của cảnh quang khách sạn.
+              <br />
+              <br>
+              Đây là điểm đến lý tưởng cho những cặp đôi yêu thích sự yên bình,
+              xanh mát trong kì trăng mật. Sở hữu 100 phòng nghỉ đầy đủ tiện
+              nghi được trang bị đồ nội thất phong cách cổ điển, giản dị nhưng
+              không kém phần tinh tế cùng những dịch vụ và tiện nghi đẳng cấp
+              như hồ bơi, nhà hàng, spa… LE MEILLEUR HÔTEL chắc chắn sẽ đem lại
+              cho các cặp đôi mới cưới một trải nghiệm khó quên.
+            </p>
+          </div>
+        </div>
+
+        <div class="card d-flex flex-row-reverse eventContent">
+          <div class="card-img">
+            <img src="../assets/img/Luxury/luxury_52.png" alt="Card image" />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <span class="fw-bold text-decoration-underline">Bao gồm:</span>
+              <ul>
+                <li>03 ngày 02 đêm ở loại phòng Deluxe Ocean hướng biển.</li>
+                <li>02 bữa ăn sáng dành cho 2 người lớn.</li>
+                <li>01 chai rượu vang đỏ đặt trong phòng.</li>
+                <li>Phòng được trang trí đặc biệt với hoa tươi và trái cây.</li>
+                <li>01 bữa ăn tối kiểu Âu tại Nhà hàng dành cho 2 khách.</li>
+                <li>
+                  Khách hàng có thể nhận phòng sớm hoặc trả phòng trễ tùy theo
+                  tình hình phòng của khách sạn.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="noncard-text ms-3">
+            <p class="fw-bold text-decoration-underline">
+              Giảm giá:
+            </p>
+            <ul>
+              <li>Giảm giá 5% khi sử dụng các dịch vụ tại nhà hàng.</li>
+              <li>Giảm giá 10% khi sử dụng dịch vụ giặt ủi.</li>
+              <li>
+                Giảm giá 10% cho dịch vụ đặt tour tham quan du lịch và thuê xe máy.
+              </li>
+            </ul>
+          </div>
+    
+          <div class="noncard-text ms-3">
+            <p class="fw-bold text-decoration-underline">
+              Điều kiện:
+            </p>
+            <ul>
+              <li>Khách hàng muốn đổi hạng phòng khác vui lòng thanh toán thêm.</li>
+              <li>Giá trên đã bao gồm thuế và phí phục vụ.</li>
+              <li>
+                Chương trình không thay đổi theo yêu cầu và không hoàn tiền cho
+                những mục khách không sử dụng.
+              </li>
+              <li>
+                Quý khách vui lòng đăng ký thời gian dùng bữa tại Quầy Lễ Tân khi
+                nhận phòng để tiện việc sắp xếp.
+              </li>
+              <li>Khách hàng tự thanh toán các khoản phát sinh khác.</li>
+            </ul>
+          </div>
+          <div class="policy-bottom noncard-text">
+            <p>
+              * Áp dụng từ 18/09/2022 đến hết 18/12/2022
+              <br />
+              * Không áp dụng cho các ngày Lễ Tết.
+            </p>
+          </div>
+          <div class="img-bottom-container">
+            <img src="../assets/img/Luxury/luxury_53.png" alt="" />
+            <img src="../assets/img/Luxury/luxury_54.png" alt="" />
+          </div>
+      </div>
+      
+    </main>
+  </body>
+</html>

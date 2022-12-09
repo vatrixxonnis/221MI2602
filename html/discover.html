@@ -1,0 +1,214 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover</title>
+    <script src="../assets/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="../assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/discover.css">
+    <script src="../javascript/discover.js" defer></script>
+    <script async>
+        $.get("../html/navigationBar.html", "", function (data) {
+          $("body").prepend(data);
+        });
+        $.get("../html/footer.html", "", function (data) {
+          $("body").append(data);
+        });
+      </script>
+  </head>
+  <body>
+    <header>
+      <img src="../assets/img/Luxury/luxury_18.jpg" alt="" />
+        <div class="d-flex flex-column justify-content-center align-items-center card-img-overlay">
+          <p>Welcome to <span style="color: #ffd027">Le Meileur Hôtel</span></p>
+          <h2>Khám phá</h2>
+          <a href="#" class="btn">Đặt ngay</a>
+        </div>
+    </header>
+    <main>
+      <div id="backgroundImage"></div>
+      <div id="mainContent" class="d-flex flex-column align-items-center">
+        <p>
+          Tại khách sạn <span style="color: #F9AB0C;">le meilleur hôtel</span>, chúng tôi chia sẻ sự hiểu biết rằng
+          giải trí là 1 phần quan trọng trong kì nghỉ của bạn. Chúng được thiết
+          kế phong phú để cung cấp đến cho Quý khách niềm vui, sự thoải mái và
+          các dịch vụ hữu ích khác ở mọi lứa tuổi
+        </p>
+        <div class="d-flex flex-wrap justify-content-center">
+          <div class="card d-flex flex-row discoverType">
+            <div class="card-img">
+              <img src="../assets/img/Luxury/luxury_28.png" alt="Card image" />
+            </div>
+            <div class="card-body" style="background-color: #152C5B;">
+              <h4 class="card-title">SWIMMING POOL</h4>
+              <p class="card-text">
+                Đây là hồ bơi tràn bờ cao nhất trong các khách sạn ở đây. Hồ bới
+                được đặt tại tầng thượng của khách sạn - tầng 30
+                <br />
+                Giờ mở cửa: 6 giờ sáng
+                <br />
+                Giờ đóng cửa: 10 giờ tối
+              </p>
+              <a href="./event1.html" class="btn">Xem chi tiết</a>
+            </div>
+          </div>
+          <div class="card d-flex flex-row discoverType">
+            <div class="card-img">
+              <img src="../assets/img/Luxury/luxury_06.jpg" alt="Card image" />
+            </div>
+            <div class="card-body" style="background-color: #152C5B;">
+              <h4 class="card-title">COFFEE CORNER</h4>
+              <p class="card-text">
+                Không có gì thú vị hơn việc bắt đầu một ngày mới bằng cách
+                thưởng thức một ly cà phê ngon nhất: Expresso, Latte,
+                Cappuccino, cùng với bánh Croissant mới ra lò, bánh ngọt kiểu
+                Pháp hoặc món mignardise do bạn lựa chọn.
+              </p>
+              <a href="./event2.html" class="btn">Xem chi tiết</a>
+            </div>
+          </div>
+          <div class="card d-flex flex-row discoverType">
+            <div class="card-body" style="background-color: #807AA6;">
+              <h4 class="card-title">FITNESS CENTER</h4>
+              <p class="card-text">
+                Tại tầng 3
+                <br />
+                Cung cấp các thiết bị thể thao đa dạng bao gồm cả máy đo nhịp
+                tim và cân nặng miễn phí
+                <br />
+                Giờ mở cửa: 6 giờ sáng
+                <br />
+                Giờ đóng cửa: 10 giờ tối
+              </p>
+              <a href="./event3.html" class="btn">Xem chi tiết</a>
+            </div>
+            <div class="card-img">
+              <img src="../assets/img/Luxury/luxury_29.png" alt="Card image" />
+            </div>
+          </div>
+          <div class="card d-flex flex-row discoverType">
+            <div class="card-body" style="background-color: #807AA6;">
+              <h4 class="card-title">BAR</h4>
+              <p class="card-text">
+                Khách sạn le meilleur hôtel có nhiều sự lựa chọn giải trí cho
+                khách.
+                <br />
+                Khu vực Lobby bar sang trọng và Sky bar (gần hồ bơi) sẽ đem đến
+                cho quý khách những trải nghiệm tuyệt vời
+              </p>
+              <a href="./event4.html" class="btn">Xem chi tiết</a>
+            </div>
+            <div class="card-img">
+              <img src="../assets/img/Luxury/luxury_30.png" alt="Card image" />
+            </div>
+          </div>
+          <div class="card d-flex flex-row discoverType">
+            <div class="card-img">
+              <img src="../assets/img/Luxury/luxury_17.jpg" alt="Card image" />
+            </div>
+            <div class="card-body" style="background-color: #152C5B;">
+              <h4 class="card-title">MUD-BATH</h4>
+              <p class="card-text">
+                Nơi duy nhất cung cấp dịch vụ tắm bùn khoáng nóng thiên nhiên
+                ngay bên bờ biển.
+                <br />
+                Nguồn gốc bùn khoáng thiên nhiên được khai thác và xử lý bằng
+                công nghệ hiện đại mang lại chất lượng bùn giàu khoáng chất nhất.
+              </p>
+              <a href="./event5.html" class="btn">Xem chi tiết</a>
+            </div>
+          </div>
+          <div class="card d-flex flex-row discoverType">
+            <div class="card-img">
+              <img src="../assets/img/Luxury/luxury_05.jpg" alt="Card image" />
+            </div>
+            <div class="card-body" style="background-color: #152C5B;">
+              <h4 class="card-title">BREAKFAST BUFFET</h4>
+              <p class="card-text">
+                Thưởng thức Buffet sáng trong gian ấm cúng, lãng mạn tại khách
+                sạn Rạng Đông, quý khách có thể vừa thưởng thức những món ăn do
+                đầu bếp chuyên nghiệp khách sạn chế biến.
+                <br />
+                Giờ mở cửa: 6 giờ sáng
+                <br />
+                Giờ đóng cửa: 9 giờ sáng
+              </p>
+
+              <a href="./event6.html" class="btn">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+        <!-- Section Khám phá -->
+        <div class="container-fluid">
+          <div class="text-center d-flex flex-column">
+            <h1>Chính sách ưu đãi</h1>
+            <p>Ưu đãi đặc biệt chỉ dành riêng cho bạn</p>
+          </div>
+          <div class="d-flex flex-md-row flex-column justify-content-md-evenly">
+            <div class="card img-fluid eventType">
+              <img
+                class="card-img-top"
+                src="../assets/img/KC_Hill/KC_Hill_021.jpg"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <div style="min-height: 50%;">
+                  <h4 class="card-title">Kỉ niệm ngày cưới</h4>
+                  <p class="card-text" style="min-height: 0;">
+                    Kết hợp bữa sáng và spa tại phòng chỉ có tại “Tên khách sạn”.
+                  </p>
+                </div>
+                <a href="#" class="btn text-light btn-outline-light bg-transparent"
+                  >Khám phá ngay</a
+                >
+              </div>
+            </div>
+    
+            <div class="card img-fluid eventType">
+              <img
+                class="card-img-top"
+                src="../assets/img/KC_Hill/KC_Hill_016.jpg"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <div style="min-height: 50%;">
+                  <h4 class="card-title">Nghỉ dưỡng tuyệt vời cùng gia đình</h4>
+                  <p class="card-text" style="min-height: 0;">
+                    Trải nghiệm suối nước nóng ngoài trời và hơn thế nữa...
+                  </p>
+                </div>
+                <a href="#" class="btn text-light btn-outline-light bg-transparent"
+                  >Khám phá ngay</a
+                >
+              </div>
+            </div>
+    
+            <div class="card img-fluid eventType">
+              <img
+                class="card-img-top"
+                src="../assets/img/KC_Hill/KC_Hill_015.jpg"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <div style="min-height: 50%;">
+                  <h4 class="card-title">Honeymoon đáng nhớ</h4>
+                  <p class="card-text" style="min-height: 0;">
+                    Trải nghiệm suối nước nóng ngoài trời và hơn thế nữa...
+                  </p>
+                </div>
+                <a href="#" class="btn text-light btn-outline-light bg-transparent"
+                  >Khám phá ngay</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

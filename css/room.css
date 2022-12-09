@@ -1,0 +1,306 @@
+body {
+  background-color: #e8e4d8;
+}
+/* Header */
+header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  font-size: 30px;
+}
+header > img {
+  width: 100%;
+  height: 100vh;
+  filter: brightness(50%);
+  z-index: -1;
+}
+header > div {
+  height: 100vh;
+  width: 100%;
+}
+header > div h2 {
+  font-family: Trocchi;
+  font-weight: 400;
+}
+header > div > p {
+  font-weight: 700;
+  font-family: Sulphur Point;
+}
+header > div > a {
+  background-color: #f9ab0c !important;
+  color: white !important;
+}
+div#backgroundImage {
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-image: url("../assets/img/Luxury/luxury_04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  filter: opacity(40%);
+  -webkit-filter: opacity(40%);
+}
+div#mainContent {
+  font-family: Roboto;
+  width: 100%;
+  color: black;
+  font-size: 30px;
+}
+/* Content */
+div.room-container {
+  background-color: transparent;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* Section 1 */
+
+#btn-bookRoom {
+  color: white;
+  background-color: #dcb322;
+  padding: 4px;
+  float: right;
+  margin-right: 5%;
+  text-decoration: none;
+}
+#btn-bookRoom:hover {
+  color: black;
+}
+.list {
+  margin: 5% 0;
+}
+/* Section 2 */
+#large-picture {
+  margin-bottom: 1em;
+  width: 100%;
+  height: 60vh;
+}
+#roomInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#roomInfo > img {
+  width: 20%;
+  height: auto;
+}
+#roomInfo > img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.form-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  font-family: SulphurPoint;
+  font-weight: 400;
+}
+.form-section > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background-color: black;
+  height: fit-content;
+  width: fit-content;
+}
+/* .form-container-person {
+} */
+.form-select {
+  color: white;
+  background-color: black;
+  border-style: none;
+  text-align: center;
+}
+.form-container-date > img {
+  margin: 0 10px;
+}
+input[type="date"].pickingDate::-webkit-inner-spin-button,
+input[type="date"].pickingDate::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.pickingDate {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border-style: none;
+  height: fit-content;
+  width: fit-content;
+}
+/* Card Section */
+#card-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-img-top {
+  height: 50%;
+}
+.card-img-top > img {
+  width: 100%;
+  height: 50%;
+}
+.card-body {
+  height: 40%;
+}
+.card > a {
+  height: 10%;
+  background-color: #f9ab0c;
+  border-color: #f9ab0c;
+  align-self: flex-start;
+  height: fit-content;
+}
+.card-title {
+  font-family: Trocchi;
+  font-weight: 400;
+}
+.card-text {
+  font-family: Roboto;
+  font-weight: 400;
+}
+@media (max-width: 576px) {
+  .card {
+    width: 70% !important;
+    height: 45vh !important;
+  }
+  .card-title {
+    font-size: 0.4em !important;
+  }
+  .card-text,
+  .card > a {
+    font-size: 0.35em !important;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 40%;
+    height: 60vh;
+    margin: 2% 1%;
+  }
+  .card-body {
+    padding: 8px;
+  }
+  .card-title {
+    font-size: 0.5em;
+    margin: 0;
+  }
+  .card-text,
+  .card > a {
+    font-size: 0.4em;
+  }
+  .card > a {
+    margin-left: 8px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+  }
+  .room-container-content > .title {
+    font-size: 1em;
+  }
+  .room-container-content > p,
+  .list, #btn-bookRoom,.form-section {
+    font-size: .7em;
+  }
+  #price {
+    font-size: 1.15em;
+  }
+  div.room-container-content {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    width: 20%;
+    height: 60vh;
+    margin: 0 1.5%;
+  }
+  .card-title {
+    font-size: 0.4em;
+  }
+  .card-text,
+  .card > a {
+    font-size: 0.3em;
+  }
+  .card > a {
+    margin-left: 1rem;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+  }
+  .room-container-content > .title {
+    font-size: 1.1em;
+  }
+  .room-container-content > p,
+  .list, #btn-bookRoom,.form-section {
+    font-size: .8em;
+  }
+  #price {
+    font-size: 1.25em;
+    margin: 20% 0;
+  }
+  div.room-container-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  .vertical-line {
+    width: 0;
+    height: 250px;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 0.375rem;
+  }
+  #large-picture {
+    margin-top: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .card-title {
+    font-size: 0.45em;
+  }
+  .card-text,
+  .card > a {
+    font-size: 0.35em;
+  }
+  .room-container-content > .title {
+    font-size: 1.35em;
+  }
+  .room-container-content > p,
+  .list, #btn-bookRoom {
+    font-size: .9em;
+  }
+  #price {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1140px) {
+  .card {
+    height: 55vh;
+  }
+  .card-title {
+    font-size: 0.5em;
+  }
+  .card-text,
+  .card > a {
+    font-size: 0.4em;
+  }
+  .room-container-content > .title {
+    font-size: 1.5em;
+  }
+  .room-container-content > p,
+  .list, #btn-bookRoom {
+    font-size: 1em;
+  }
+  #price {
+    font-size: 1.75em;
+  }
+}

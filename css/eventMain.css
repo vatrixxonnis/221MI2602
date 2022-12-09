@@ -1,0 +1,213 @@
+body {
+    background-color: #e8e4d8;
+  }
+  header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    font-size: 30px;
+  }
+  header > img {
+    width: 100%;
+    height: 100vh;
+    filter: brightness(50%);
+    z-index: -1;
+  }
+  header > div {
+    height: 100vh;
+    width: 100%;
+  }
+  header > div h2 {
+    font-family: Trocchi;
+    font-weight: 400;
+  }
+  header > div > p {
+    font-weight: 700;
+    font-family: Sulphur Point;
+  }
+  header > div > a {
+    background-color: #f9ab0c !important;
+    color: white !important;
+  }
+  div#backgroundImage {
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-image: url("../assets/img/Luxury/luxury_19.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    filter: opacity(40%);
+    -webkit-filter: opacity(40%);
+  }
+  div#mainContent {
+    font-family: Roboto;
+    width: 100%;
+    color: black;
+    font-size: 30px;
+  }
+  div#mainContent > p {
+    width: 60%;
+    text-align: center;
+    margin: 5% 0;
+    font-size: .75em;
+  }
+  div#mainContent > h1 {
+    margin: 2.5% 0;
+  }
+  @media (max-width: 576px) {
+    h4.card-title {
+      font-size: 0.5em !important;
+    }
+    p.card-text {
+      font-size: 0.25em !important;
+      margin: 0;
+    }
+    a.btn {
+      font-size: 0.25em !important;
+    }
+    .eventType {
+      width: 90% !important;
+    }
+    header > div > h2 {
+      font-size: 1.4em !important;
+    }
+    header > div > p {
+      font-size: 0.45em !important;
+    }
+    #mainContent > h1 {
+        font-size: .75em !important;
+    }
+    .container-fluid > p {
+        font-size: .5em !important;
+    }
+  }
+  @media (max-width: 768px) {
+    h4.card-title {
+      font-size: 0.6em;
+    }
+    p.card-text {
+      font-size: 0.3em;
+      margin: 0;
+    }
+    a.btn {
+      font-size: 0.3em;
+    }
+    .eventType {
+      width: 80%;
+      margin: 20px auto;
+      height: 30vh;
+    }
+    .eventType > img {
+      height: 100%;
+      width: 100%;
+    }
+    div#mainContent > p {
+      width: 90%;
+      font-size: .5em;
+    }
+    header > div > h2 {
+      font-size: 1.4em;
+    }
+    header > div > p {
+      font-size: 0.55em;
+    }
+    .card-img-overlay > a {
+        width: 20%;
+      }
+      #btn-book {
+        width: 10%;
+    }
+    #mainContent > h1 {
+        font-size: 1em;
+    }
+    .container-fluid > p {
+        font-size: .75em;
+    }
+  }
+  @media (min-width: 768px) {
+    h4.card-title {
+      font-size: 0.7em;
+    }
+    p.card-text {
+      font-size: 0.35em;
+      margin: 0;
+      min-height: 60%;
+    }
+    a.btn {
+      font-size: 0.35em;
+    }
+    .eventType {
+      width: 30%;
+      height: 40vh;
+    }
+    .eventType > img {
+      height: 100%;
+      width: 100%;
+    }
+    header > div > h2 {
+      font-size: 1.8em;
+    }
+    header > div > p {
+      font-size: 0.65em;
+    }
+    .card-img-overlay > a {
+        width: 50%;
+      }
+      #btn-book {
+        width: 10%;
+    }
+  }
+  @media (min-width: 992px) {
+    h4.card-title {
+      font-size: .8em;
+    }
+    p.card-text {
+      font-size: 0.5em;
+      margin: 0;
+    }
+    a.btn {
+      font-size: 0.5em;
+    }
+    header > div > h2 {
+      font-size: 2em;
+    }
+    header > div > p {
+      font-size: 0.75em;
+    }
+    .card-img-overlay > a {
+        width: 30%;
+      }
+  }
+  
+  /* Policy Section */
+  .container-fluid {
+    background-color: transparent;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: Roboto;
+  }
+  .eventType {
+    border: 0px solid;
+    border-radius: 10px;
+    margin-top: 5%;
+  }
+  .eventType > img {
+    filter: brightness(50%);
+  }
+  .card-img-overlay > a {
+    border: 1.5px solid #FFFFFF;
+  }
+  .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  .card-img-overlay > div {
+    min-height: 60%
+  }
+  

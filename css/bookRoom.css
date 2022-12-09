@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-color: #e8e4d8;
+}
+header {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+header > img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -50%;
+  filter: brightness(50%);
+  z-index: -1;
+}
+.main {
+  background-color: #e8e4d8;
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+}
+/* Search Bar */
+#searchArea {
+  font-family: Roboto;
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+  
+  z-index: 1;
+  box-shadow: 10px 10px rgba(137, 137, 137, 0.5);
+}
+#searchArea > div {
+  flex: 2;
+  font-size: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#searchArea > div > input {
+  width: 80%;
+}
+#searchArea > div:last-child {
+  flex: 1;
+  border-right: none;
+}
+#searchArea > div > p {
+  margin: 0;
+}
+#searchRoomButton {
+  color: black;
+  background-color: #f9ab0c;
+  border-radius: 5px;
+}
+/* Card Section */
+.card {
+  width: 80vw;
+  height: 40vh;
+  margin: 5% auto;
+}
+.btn-primary {
+  background-color: #f9ab0c;
+  border-color: #f9ab0c;
+}
+.card-body > div {
+  min-height: 20vh;
+}
+.card-img-top > img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  #searchArea > div {
+    margin: 5px 0;
+  }
+  #searchArea {
+    top: 50vh;
+    width: 80%;
+    height: auto;
+  }
+  p.card-text,.card-body > a {
+    font-size: .35em;
+  }
+  .card-title {
+    font-size: .5em;
+  }
+  .card-img-top {
+    width: 50%;
+  }
+  .card-body {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  #searchArea {
+    top: 60vh;
+    width: 80%;
+    height: 10vh;
+  }
+  #searchArea > div {
+    white-space: nowrap;
+    border-right: 3px solid #a0a0a0;
+  }
+  p.card-text,.card-body > a {
+    font-size: .5em;
+  }
+  .card-title {
+    font-size: .8em;
+  }
+  .card-img-top {
+    width: 30%;
+  }
+  .card-body {
+    width: 70%;
+  }
+}

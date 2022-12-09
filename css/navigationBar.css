@@ -1,0 +1,110 @@
+/* Import Fonts */
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Trocchi;
+  src: url(../assets/fonts/Trocchi-Regular.ttf);
+}
+@font-face {
+  font-family: SulphurPoint;
+  src: url(../assets/fonts/SulphurPoint-Regular.ttf);
+}
+#navigationBar {
+  padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  #navigationBar {
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #navigationBar {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #navigationBar {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 576px) {
+  #navigationBar {
+    flex-direction: column;
+    font-size: 18px;
+    background-color: black;
+  }
+  #linkedList {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .navbar-brand {
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding: 0;
+    text-align: center;
+  }
+  .navbar-brand > p:nth-child(2) {
+    font-size: 0.75em;
+    margin-bottom: 0;
+  }
+  .navbar-brand > p:last-child {
+    font-size: 0.5em;
+    margin-bottom: 0;
+  }
+  .nav-link:hover {
+    transform: scale(1.5);
+  }
+  #navBarLogo {
+    width: 30%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #navigationBar {
+    flex-direction: row !important;
+    font-size: 12px;
+    background-color: black !important;
+  }
+  #linkedList {
+    flex-direction: column;
+  }
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 12px !important;
+  }
+  .navbar-brand > p:nth-child(2) {
+    font-size: 0.75em;
+    margin-bottom: 0;
+  }
+  .navbar-brand > p:last-child {
+    font-size: 0.5em;
+    margin-bottom: 0;
+  }
+  .nav-item {
+    margin-left: 1%;
+  }
+  #navBarLogo {
+    max-width: 20% !important;
+  }
+}
+
+.nav-link {
+  color: white;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+#collapsibleNavbar {
+  width: 100%;
+}
+
+

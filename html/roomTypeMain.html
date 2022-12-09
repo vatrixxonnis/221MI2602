@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <script src="../assets/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="../assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/roomTypeMain.css" />
+    <script src="../javascript/roomTypeMain.js" defer></script>
+    <script async>
+      $.get("../html/navigationBar.html", "", function (data) {
+        $("body").prepend(data);
+      });
+      $.get("../html/footer.html", "", function (data) {
+        $("body").append(data);
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="../assets/img/Luxury/luxury_18.jpg" alt="" />
+      <div
+        class="d-flex flex-column justify-content-center align-items-center card-img-overlay"
+      >
+        <p>Welcome to <span style="color: #ffd027">Le Meileur Hôtel</span></p>
+        <h2>Loại phòng</h2>
+        <a href="#section" class="btn" id="btn-book">Đặt ngay</a>
+      </div>
+    </header>
+  <main>
+    <div id="backgroundImage"></div>
+    <div id="mainContent">
+        <!-- Section -->
+        <div id="section">
+            <p>
+                Với lối kiến trúc hiện đại kết hợp hài hòa cùng khung cảnh thiên nhiên, <span style="color: #F9AB0C;">Le Meilleur Hôtel</span> gồm 118 phòng nghỉ đạt tiêu chuẩn quốc tế. Tất cả các phòng đều rộng rãi, đầy đủ tiện nghi mà quý khách mong muốn từ một khu nghỉ dưỡng chất lượng hàng đầu, bao gồm truyền hình cáp, máy lạnh, internet phủ sóng toàn bộ khu nghỉ dưỡng, két sắt, bồn tắm trong phòng cùng những tiện nghi khác.
+            </p>
+          <div id="room-content">
+            <div class="card d-flex">
+                <img class="card-img-top" src="../assets/img/Luxury/luxury_01.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Phòng Deluxe Ocean</h4>
+                  <p class="card-text">Deluxe Ocean View mang đến cho du khách một cảm giác thư thái tuyệt vời với nội thất trang trí hiện đại, tinh tế kết hợp với cửa sổ có tầm nhìn rộng hướng ra một phần biển thơ mộng, tươi mát.</p>
+                  
+                </div>
+                <a href="./roomType1.html" class="btn">Xem thêm</a>
+              </div>
+
+              <div class="card d-flex">
+                <img class="card-img-top" src="../assets/img/Luxury/luxury_22.jpg" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Phòng Junior Suite</h4>
+                  <p class="card-text">Phòng Junior Suite thích hợp cho các cặp uyên ương muốn tận hưởng cảm giác xa hoa, sang trọng và lãng mạng tuyệt vời, tận hưởng mà không bao giờ thấy "chán" bởi sự tiện nghi và thiết kế đẹp mắt mà căn phòng này mang lại.
+                </p>
+                  
+                </div>
+                <a href="./roomType2.html" class="btn">Xem thêm</a>
+              </div>
+
+              <div class="card d-flex">
+                <img class="card-img-top" src="../assets/img/Luxury/luxury_24.jpg" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Phòng Club Suite</h4>
+                  <p class="card-text">Được trang trí sang trọng theo phong cách cổ điển đặc trưng, ​​phòng Club Suite sở hữu phòng khách và phòng ngủ rộng, là nơi thư giãn lý tưởng sau một ngày dài. Đặc biệt, lưu trú tại phòng Club Suite, bạn sẽ được hưởng quyền lợi dành cho khách VIP.</p>
+                  
+                </div>
+                <a href="./roomType3.html" class="btn">Xem thêm</a>
+              </div>
+
+              <div class="card d-flex">
+                <img class="card-img-top" src="../assets/img/Luxury/luxury_55.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Phòng Family Suite</h4>
+                  <p class="card-text">Được trang trí sang trọng theo phong cách cổ điển đặc trưng, ​​phòng Club Suite sở hữu phòng khách và phòng ngủ rộng, là nơi thư giãn lý tưởng sau một ngày dài. Đặc biệt, lưu trú tại phòng Club Suite, bạn sẽ được hưởng quyền lợi dành cho khách VIP.</p>
+                  
+                </div>
+                <a href="./roomType4.html" class="btn">Xem thêm</a>
+              </div>
+
+              <div class="card d-flex">
+                <img class="card-img-top" src="../assets/img/Luxury/luxury_56.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Phòng Executive Suite</h4>
+                  <p class="card-text">Deluxe Ocean View mang đến cho du khách một cảm giác thư thái tuyệt vời với nội thất trang trí hiện đại, tinh tế kết hợp với cửa sổ có tầm nhìn rộng hướng ra một phần biển thơ mộng, tươi mát.</p>
+                  
+                </div>
+                <a href="./roomType5.html" class="btn">Xem thêm</a>
+              </div>
+
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+</html>

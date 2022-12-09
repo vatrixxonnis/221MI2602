@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="../css/navigationBar.css" />
+<link rel="stylesheet" href="../css/modalLogin.css" />
+<script src="../javascript/navigationBar.js" defer></script>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navigationBar">
+    <a class="navbar-brand" href="./index.html">
+      <img
+        src="../assets/stuff/Logo.png"
+        alt="Hotel Logo"
+        class="rounded-pill"
+        id="navBarLogo"
+      />
+      <p>LE MEILLEUR HÔTEL</p>
+      <p>HOTEL & RESORT</p>
+    </a>
+    <button
+      title="Toogle Button"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mx-auto" id="linkedList">
+        <!-- mx-auto: make item inside ul element center -->
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./roomTypeMain.html">Loại phòng</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./discover.html">Khám phá</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./eventMain.html">Sự kiện</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./bookRoom.html">Đặt phòng</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Liên hệ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openModal()">Sign in</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="modalLogin">
+    <div id="modalLogin-content">
+      <div id="modalLogin-header">
+        <span id="close">&times;</span>
+        <img
+          style="width: 10vw; height: auto"
+          src="../assets/stuff/Logo.png"
+          alt=""
+        />
+      </div>
+      <div id="modalLogin-method">
+        <button id="btn-google">
+          <img src="../assets/stuff/phone.svg" alt="" />
+          <div>Tiếp tục bằng Số điện thoại</div>
+        </button>
+        <button id="btn-phone">
+          <img src="../assets/stuff/google.png" alt="" />
+          <div>Tiếp tục bằng tài khoản Google</div>
+        </button>
+        <div style="width: 50vw; height: 2px; background-color: black"></div>
+        <p style="color: 979EA5">
+          Chưa có tài khoản? <a style="color: #ffb802" href="#">Đăng ký</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
