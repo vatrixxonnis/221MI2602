@@ -1,5 +1,6 @@
 window.onload = () => {
     setBackgroundImageHeight()
+    document.getElementById('mainContent').scrollIntoView(true);
 }
 $(window).resize(function () {
     setBackgroundImageHeight();
