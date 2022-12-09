@@ -1,3 +1,5 @@
+# Open index.html in html folder to start
+
 # 221MI2602
 This repository aims to complete the assignment of Mr. Phuc - a teacher from UEL
 Our group consists of 4 people: 
